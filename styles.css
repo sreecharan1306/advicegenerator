@@ -84,3 +84,10 @@ body {
     margin-bottom: -15px;
     /* Adjust this value to control how much is above the edge */
 }
+@media only screen and (max-width: 375px) {
+
+    .container {
+        width: 100%; /* Make the container full width */
+        border-radius: 0; 
+    }
+}
