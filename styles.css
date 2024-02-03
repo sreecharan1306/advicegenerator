@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --neon: #52ffa8;
+    --lightcyan: hsl(193, 38%, 86%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    background: hsl(218, 23%, 16%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    width: 60vw;
+    height: 55vh;
+    border-radius: 5px;
+    border: none;
+    margin: auto;
+    box-shadow: 5px #222;
+    background: #323a49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    gap: 6vh;
+}
+
+#line {
+    z-index: 3;
+    height: 10px;
+    width: 90%;
+    
+}
+
+.container p {
+    color: var(--neon);
+    /* padding-bottom: 2vh; */
+    font-size: 8px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.quote {
+    color: var(--lightcyan);
+    margin: 0 auto;
+    padding: 0 15px;
+    text-shadow: #222;
+    text-align: center;
+    text-wrap:pretty;
+    font-size: 18px;
+    font-weight: 800;
+    
+}
+
+#dice {
+    background-color: var(--neon);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    padding: 8px;
+    width: 8%;
+
+    cursor: pointer;
+    border-radius: 13px;
+    /* Updated: Set position to absolute */
+    position: absolute;
+    bottom: 0;
+    /* Place half below the edge */
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: -15px;
+    /* Adjust this value to control how much is above the edge */
+}
