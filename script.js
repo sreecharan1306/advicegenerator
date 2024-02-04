@@ -1,6 +1,6 @@
 let quote = document.getElementsByClassName("quote");
 const dice=document.getElementById("dice");
-
+const id=document.getElementById("advice-id");
 dice.addEventListener("click",newquote);
 function newquote() {
     // Fetch advice from the API
@@ -8,6 +8,7 @@ function newquote() {
         .then(response => response.json())
         .then(data => {
             // Access the advice from the JSON response
+            id.innerHTML=data.slip.id;
             const advice = data.slip.advice;
             let m = `\" ${advice} \"`
             quote[0].innerText = m;
